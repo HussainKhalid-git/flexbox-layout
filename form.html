@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        /* form k thik vabe customized korar jonno ekta parents nisci section kinba div nileo hobe */
+
+    .login-form-container{
+        border: 3px solid seagreen;
+        display: flex;
+        justify-content: center;
+        /* vertically center e neowar jonno height diye align items er maaddhome center e niye eseci */
+        height: 90vh;
+        align-items: center;
+    }
+        .login-form {
+            border: 2px solid blueviolet;
+            display: flex;
+              /* <!-- kono kicu center e neowar jonno margin: 0 auto; kinba flex use korte pari --> */
+              justify-content: center;
+            flex-direction: column;
+            width: 50%;
+        }
+            .login-form input {
+                margin-top: 20px;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+        <a href="">About</a>
+        </div>
+        
+        <a href="">Login</a>
+    </nav>
+
+   <section class="login-form-container">
+     <form class="login-form">
+        <h3>Please Login</h3>
+
+        <!-- form er nice nice sajanor jonno display:block kore dite hoi -->
+
+        <input type="email" name="" id="" placeholder="Your Email" required>
+
+        <!-- input er vitor required use korara karon mail er form e mail r password form e password use na korle hobe na-->
+        <input type="password" name="" id="" placeholder="Your password" required>
+
+        <input type="submit" value="Login">
+   </section>
+
+      
+
+    </form>
+</body>
+</html>
