@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container{
+            border: 2px solid aqua;
+            display: flex;
+
+            /* justify content  display er horizontal borabor jinis k nirdes kore j se kon position e thakbe */
+            /* justify-content: center; */
+            /* justify-content: space-around ; */
+            /* justify-content: space-between; */
+
+
+            justify-content: space-evenly;
+            height: 250px;
+
+            /* align items display er vertical borabor jinis k nirdes kore j se kon position e thakbe */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+
+            /* flex direction nirdes kore j flex er item gula kon borabor thakbe row or coloumn or row/column reverse */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+
+            /* flex wrap holo flex er item gula jkhn gadagadi kore thake flex wrap korle se nijer moto kore porjai krome jaiga kore nei */
+            /* flex-wrap: wrap; */
+
+        }
+        
+
+        .box{
+            border: 2px dashed red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Layout</h1>
+
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+    </div>
+</body>
+</html>
