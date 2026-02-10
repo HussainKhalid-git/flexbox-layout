@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
 
+    <!-- flex holo unidirection orthat j kono ekdik borabor cole r grid holo column or row j kono dike item gula k direction kora jai grid holo 2 dimensional(2D) layout -->
+
     <style>
         .container{
-            border: 1px solid red;
-            /* display: flex; */
+            border: 2px solid blueviolet;
             display: grid;
-            /* grid-template-columns: 200px 200px 200px 200px ; */
-            grid-template-columns: repeat(2 100px);
+            /* grid-template-columns: repeat(2,200px) 300px 50px; */
+            grid-template-columns: repeat(3,5fr) 10fr;
         }
-        .item{
-            border: 1px solid aqua;
+
+        .item {
+            border: 3px solid darkgoldenrod;
         }
     </style>
 </head>
@@ -22,6 +24,7 @@
     <h2>Explore Grid Layout: 2D Layout</h2>
 
     <div class="container">
+        <!-- .item{item-$}*20 -->
         <div class="item">item-1</div>
         <div class="item">item-2</div>
         <div class="item">item-3</div>
